@@ -13,6 +13,8 @@ public class hand_presence : MonoBehaviour
     private InputDevice target_device;
     private GameObject spawned_controller;
     private GameObject spawned_hand_model;
+    private Animator hand_anime;
+
 
     void Start()
     {
@@ -42,12 +44,36 @@ public class hand_presence : MonoBehaviour
         }
 
         spawned_hand_model = Instantiate(hand_model_prefab, transform);
+        hand_anime = spawned_hand_model.GetComponent<Animator>();
+    }
 
+    void update_hand_animation()
+    {
+        //트리거 버튼 애니메이션
+        if(target_device.TryGetFeatureValue(CommonUsages.trigger, out float trigger_value))
+        {
+            hand_anime.SetFloat("Trigger", trigger_value);
+        }
+        else
+        {
+            hand_anime.SetFloat("Trigger", 0);
+        }
+
+        //그립 버튼 애니메이션
+        if (target_device.TryGetFeatureValue(CommonUsages.grip, out float grip_value))
+        {
+            hand_anime.SetFloat("Grip", grip_value);
+        }
+        else
+        {
+            hand_anime.SetFloat("Grip", 0);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        #region 디버그.로그 입력키
         /*
         // x,y || a,b 버튼
         if (target_device.TryGetFeatureValue(CommonUsages.primaryButton, out bool primary_btn_value) &&primary_btn_value)
@@ -67,16 +93,18 @@ public class hand_presence : MonoBehaviour
             Debug.Log("primary touchpad " + primary_2d_axis_value);
         }
         */
+        #endregion
 
-        if (show_controller)
+        if (show_controller) //컨트롤러가 있을때
         {
             spawned_hand_model.SetActive(false);
             spawned_controller.SetActive(true);
         }
-        else
+        else //손이 있을때
         {
             spawned_hand_model.SetActive(true);
             spawned_controller.SetActive(false);
+            update_hand_animation();
         }
     }
 }

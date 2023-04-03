@@ -1117,6 +1117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422740}
   - component: {fileID: 5402888}
+  - component: {fileID: -8988593617723837855}
   m_Layer: 0
   m_Name: CustomHandRight
   m_TagString: Untagged
@@ -1156,6 +1157,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &-8988593617723837855
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 9a74b189572108f4fb3641b5f3199193, type: 3}
+  m_Controller: {fileID: 9100000, guid: 1963ff1a7ae6da84b8d9a848925de794, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &196690
 GameObject:
   m_ObjectHideFlags: 0

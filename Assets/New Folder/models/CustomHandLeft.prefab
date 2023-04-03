@@ -672,7 +672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 414912}
   - component: {fileID: 5460176}
-  - component: {fileID: -8993216271819337636}
+  - component: {fileID: 9127363958269080411}
   m_Layer: 0
   m_Name: CustomHandLeft
   m_TagString: Untagged
@@ -712,7 +712,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &-8993216271819337636
+--- !u!95 &9127363958269080411
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -721,8 +721,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143668}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c1d76dfdf5c444f42bc9746c400a0956, type: 2}
+  m_Avatar: {fileID: 9000000, guid: b616ee8628a95e04da0c933fe2992549, type: 3}
+  m_Controller: {fileID: 9100000, guid: 69b5a93c7f4ea084a83c0f5028573a5c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
