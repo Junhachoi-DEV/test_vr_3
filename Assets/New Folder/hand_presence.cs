@@ -49,25 +49,26 @@ public class hand_presence : MonoBehaviour
 
     void update_hand_animation()
     {
-        //트리거 버튼 애니메이션
-        if(target_device.TryGetFeatureValue(CommonUsages.trigger, out float trigger_value))
-        {
-            hand_anime.SetFloat("Trigger", trigger_value);
-        }
-        else
-        {
-            hand_anime.SetFloat("Trigger", 0);
-        }
-
         //그립 버튼 애니메이션
         if (target_device.TryGetFeatureValue(CommonUsages.grip, out float grip_value))
         {
-            hand_anime.SetFloat("Grip", grip_value);
+            hand_anime.SetFloat("grip", grip_value);
         }
         else
         {
-            hand_anime.SetFloat("Grip", 0);
+            hand_anime.SetFloat("grip", 0);
         }
+
+        //트리거 버튼 애니메이션
+        if (target_device.TryGetFeatureValue(CommonUsages.trigger, out float trigger_value))
+        {
+            hand_anime.SetFloat("trigger", trigger_value);
+        }
+        else
+        {
+            hand_anime.SetFloat("trigger", 0);
+        }
+
     }
 
     // Update is called once per frame
