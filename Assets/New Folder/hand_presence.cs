@@ -18,8 +18,12 @@ public class hand_presence : MonoBehaviour
 
     void Start()
     {
+        try_initialize();
+    }
+    void try_initialize()
+    {
         List<InputDevice> devices = new List<InputDevice>();
-        
+
         InputDevices.GetDevicesWithCharacteristics(controller_char, devices);
 
         //디바이스의 입력버튼 값을 디버그로 출력할것이다.
@@ -28,7 +32,7 @@ public class hand_presence : MonoBehaviour
             Debug.Log(item.name + item.characteristics);
         }
 
-        if(devices.Count > 0)
+        if (devices.Count > 0)
         {
             target_device = devices[0];
             GameObject prefab = controller_prefabs.Find(controller => controller.name == target_device.name);
@@ -39,7 +43,7 @@ public class hand_presence : MonoBehaviour
             else
             {
                 //Debug.LogError("did not find con~~");
-                spawned_controller = Instantiate(controller_prefabs[0],transform); 
+                spawned_controller = Instantiate(controller_prefabs[0], transform);
             }
         }
 
@@ -96,16 +100,23 @@ public class hand_presence : MonoBehaviour
         */
         #endregion
 
-        if (show_controller) //컨트롤러가 있을때
+        if (!target_device.isValid)
         {
-            spawned_hand_model.SetActive(false);
-            spawned_controller.SetActive(true);
+            try_initialize();
         }
-        else //손이 있을때
+        else
         {
-            spawned_hand_model.SetActive(true);
-            spawned_controller.SetActive(false);
-            update_hand_animation();
+            if (show_controller) //컨트롤러가 있을때
+            {
+                spawned_hand_model.SetActive(false);
+                spawned_controller.SetActive(true);
+            }
+            else //손이 있을때
+            {
+                spawned_hand_model.SetActive(true);
+                spawned_controller.SetActive(false);
+                update_hand_animation();
+            }
         }
     }
 }

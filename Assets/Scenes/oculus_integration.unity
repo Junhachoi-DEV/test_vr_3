@@ -352,13 +352,15 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedKinematic: 0
+  m_grabbedCollider: {fileID: 0}
+  m_grabbedBy: {fileID: 0}
   m_materialColorField: 
---- !u!4 &233085238 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-    type: 3}
-  m_PrefabInstance: {fileID: 6376356180795874801}
-  m_PrefabAsset: {fileID: 0}
+  m_crosshair: {fileID: 0}
+  m_crosshairManager: {fileID: 0}
+  m_renderer: {fileID: 0}
+  m_inRange: 0
+  m_targeted: 0
 --- !u!1 &518278383
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +457,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &720118433
 GameObject:
@@ -493,69 +495,8 @@ Transform:
   - {fileID: 1081347774}
   - {fileID: 129480003}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &720210769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 720210770}
-  - component: {fileID: 720210772}
-  - component: {fileID: 720210771}
-  m_Layer: 0
-  m_Name: Grab Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &720210770
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720210769}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 233085238}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &720210771
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720210769}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &720210772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 720210769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2d153878a9f7eb45b0e02c0c739029a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OutlineColorInRange: {r: 0, g: 0, b: 0, a: 0}
-  OutlineColorHighlighted: {r: 0, g: 0, b: 0, a: 0}
-  OutlineColorOutOfRange: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &928249756
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +629,15 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedKinematic: 0
+  m_grabbedCollider: {fileID: 0}
+  m_grabbedBy: {fileID: 0}
   m_materialColorField: 
+  m_crosshair: {fileID: 0}
+  m_crosshairManager: {fileID: 0}
+  m_renderer: {fileID: 0}
+  m_inRange: 0
+  m_targeted: 0
 --- !u!1 &1081347773
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,7 +770,15 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedKinematic: 0
+  m_grabbedCollider: {fileID: 0}
+  m_grabbedBy: {fileID: 0}
   m_materialColorField: 
+  m_crosshair: {fileID: 0}
+  m_crosshairManager: {fileID: 0}
+  m_renderer: {fileID: 0}
+  m_inRange: 0
+  m_targeted: 0
 --- !u!1 &1102419078
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +911,15 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedKinematic: 0
+  m_grabbedCollider: {fileID: 0}
+  m_grabbedBy: {fileID: 0}
   m_materialColorField: 
+  m_crosshair: {fileID: 0}
+  m_crosshairManager: {fileID: 0}
+  m_renderer: {fileID: 0}
+  m_inRange: 0
+  m_targeted: 0
 --- !u!1 &1137630197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1146,15 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedKinematic: 0
+  m_grabbedCollider: {fileID: 0}
+  m_grabbedBy: {fileID: 0}
   m_materialColorField: 
+  m_crosshair: {fileID: 0}
+  m_crosshairManager: {fileID: 0}
+  m_renderer: {fileID: 0}
+  m_inRange: 0
+  m_targeted: 0
 --- !u!1 &2064790615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,79 +1287,12 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedKinematic: 0
+  m_grabbedCollider: {fileID: 0}
+  m_grabbedBy: {fileID: 0}
   m_materialColorField: 
---- !u!1001 &6376356180795874801
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.071
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6376356180571674857, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      propertyPath: m_Name
-      value: OVRPlayerController
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6376356180571243719, guid: c198cc58c4fcbdb4884ccd7432194448,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 720210770}
-  m_SourcePrefab: {fileID: 100100000, guid: c198cc58c4fcbdb4884ccd7432194448, type: 3}
+  m_crosshair: {fileID: 0}
+  m_crosshairManager: {fileID: 0}
+  m_renderer: {fileID: 0}
+  m_inRange: 0
+  m_targeted: 0

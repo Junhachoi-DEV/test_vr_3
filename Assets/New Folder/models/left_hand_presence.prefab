@@ -48,4 +48,4 @@ MonoBehaviour:
   controller_char: 320
   controller_prefabs:
   - {fileID: 1541884379462663858, guid: b1f7979fec250a742aa7945ecb23687b, type: 3}
-  hand_model_prefab: {fileID: 143668, guid: 917345ac0c9df0d4fae1fd2d95f6a042, type: 3}
+  hand_model_prefab: {fileID: 143668, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
