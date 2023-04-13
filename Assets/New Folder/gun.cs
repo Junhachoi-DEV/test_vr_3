@@ -10,53 +10,63 @@ public class gun : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip audioClip;
 
-    Queue<GameObject> spawned_bullet = new Queue<GameObject>();
+    //Queue<GameObject> spawned_bullet = new Queue<GameObject>();
     //public static gun instance = null;
-    //GameObject[] spawned_bullet;
+    GameObject[] spawned_bullet;
+    GameObject[] pool_bullet;
     //GameObject spawned = null;
 
-    //int num=0;
+    int num=10;
 
     private void Start()
     {
-        //spawned_bullet = new GameObject[num];
+        spawned_bullet = new GameObject[num];
+
+        generate();
     }
 
-    GameObject creat_new_obj()
+    void generate()
     {
-        GameObject new_obj = Instantiate(bullet, barrel.position, barrel.rotation);
-        new_obj.SetActive(false);
-        return new_obj;
+        for (int i = 0; i < spawned_bullet.Length; i++)
+        {
+            spawned_bullet[i] = Instantiate(bullet);
+        }
     }
+
+
+    GameObject make_obj()
+    {
+        pool_bullet = spawned_bullet;
+        for(int i = 0;i < pool_bullet.Length; i++)
+        {
+            if (!pool_bullet[i].gameObject.activeSelf)
+            {
+                pool_bullet[i].SetActive(true);
+                return pool_bullet[i];
+            }
+        }
+        return null;
+    }
+    GameObject[] get_pool()
+    {
+        return pool_bullet;
+    }
+
 
     public void _fire()
     {
-        if (spawned_bullet == null)
-        {
-            spawned_bullet[num] = Instantiate(bullet, barrel.position, barrel.rotation);
-            spawned_bullet[num].GetComponent<Rigidbody>().velocity = speed * barrel.forward;
-            audioSource.PlayOneShot(audioClip);
-            StartCoroutine(spawned_bullet_co_ro(spawned_bullet[num]));
-            num++;
-        }
-        else
-        {
-            spawned_bullet[num].SetActive(true);
-            spawned_bullet[num].transform.position = barrel.position;
-            spawned_bullet[num].transform.rotation = barrel.rotation;
-            audioSource.PlayOneShot(audioClip);
-            spawned_bullet[num].GetComponent<Rigidbody>().velocity = speed * barrel.forward;
-            StartCoroutine(spawned_bullet_co_ro(spawned_bullet[num]));
-        }
+        StartCoroutine(spawned_bullet_co_ro());
 
-
-
-        //audioSource.PlayOneShot(audioClip);
-        //Destroy(spawned_bullet, 2);
     }
 
-    IEnumerator spawned_bullet_co_ro(GameObject bullet)
+    IEnumerator spawned_bullet_co_ro()
     {
+        GameObject bullet = make_obj();
+        bullet.transform.position = barrel.position;
+        bullet.transform.rotation = barrel.rotation;
+        audioSource.PlayOneShot(audioClip);
+        bullet.GetComponent<Rigidbody>().velocity = speed * barrel.forward;
+
         var wait = new WaitForSeconds(2);
         yield return wait;
         bullet.SetActive(false);
