@@ -67,8 +67,7 @@ public class gun : MonoBehaviour
         audioSource.PlayOneShot(audioClip);
         bullet.GetComponent<Rigidbody>().velocity = speed * barrel.forward;
 
-        var wait = new WaitForSeconds(2);
-        yield return wait;
+        yield return yield_cache.WaitForSeconds(2);
         bullet.SetActive(false);
     }
 }
