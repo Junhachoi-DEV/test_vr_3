@@ -10,7 +10,7 @@ public class paint_can : MonoBehaviour
     private void Start()
     {
         mesh_r = GetComponent<MeshRenderer>();
-        gameObject.layer = 14;
+        gameObject.layer = 10;
     }
 
     private void OnTriggerEnter(Collider other)
