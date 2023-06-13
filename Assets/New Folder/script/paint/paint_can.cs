@@ -37,5 +37,15 @@ public class paint_can : MonoBehaviour
             mesh_r.material = mat[3];
             gameObject.layer = 13;
         }
+        else if (other.CompareTag("paint_drump_black"))
+        {
+            mesh_r.material = mat[4];
+            gameObject.layer = 13;
+        }
+    }
+
+    public void paint_reset()
+    {
+
     }
 }

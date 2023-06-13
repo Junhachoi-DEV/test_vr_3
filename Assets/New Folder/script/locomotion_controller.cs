@@ -32,6 +32,8 @@ public class locomotion_controller : MonoBehaviour
                 check_if_activated(left_teleport_ray) &&
                 !is_left_interactor_ray_hovering);
         }
+
+
     }
 
     public bool check_if_activated(XRController controller)
@@ -39,4 +41,6 @@ public class locomotion_controller : MonoBehaviour
         InputHelpers.IsPressed(controller.inputDevice, teleport_activation_button, out bool is_actiated, activation_threshold);
         return is_actiated;
     }
+
+    
 }
