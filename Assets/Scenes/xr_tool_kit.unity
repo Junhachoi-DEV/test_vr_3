@@ -496,42 +496,36 @@ MonoBehaviour:
   m_UpdateMode: 3
   m_Damping: 0.1
   m_DampingDistrib:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_Elasticity: 0.1
   m_ElasticityDistrib:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_Stiffness: 0.1
   m_StiffnessDistrib:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_Inert: 0
   m_InertDistrib:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_Friction: 0
   m_FrictionDistrib:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   m_Radius: 0
   m_RadiusDistrib:
-    serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -548,6 +542,16 @@ MonoBehaviour:
   m_ReferenceObject: {fileID: 0}
   m_DistanceToObject: 20
   m_Multithread: 1
+  m_ObjectMove: {x: 0, y: 0, z: 0}
+  m_ObjectPrevPosition: {x: 0, y: 0, z: 0}
+  m_ObjectScale: 0
+  m_Time: 0
+  m_Weight: 1
+  m_DistantDisabled: 0
+  m_PreUpdateCount: 0
+  m_DeltaTime: 0
+  m_EffectiveColliders: []
+  m_WorkAdded: 0
 --- !u!1 &98414933
 GameObject:
   m_ObjectHideFlags: 0
@@ -6878,7 +6882,7 @@ GameObject:
   - component: {fileID: 303479733}
   - component: {fileID: 303479732}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: paint_wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6891,15 +6895,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303479730}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.84, z: -2.45}
-  m_LocalScale: {x: 3, y: 3, z: 0.3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.12, y: 0.999, z: 2.79}
+  m_LocalScale: {x: 9, y: 3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 737288674}
   m_Father: {fileID: 409328329}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &303479732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7235,7 +7239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377173165}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.994, y: 0.871, z: -1.57}
+  m_LocalPosition: {x: -6.955, y: 1.188, z: 2.109}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
