@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - SamplesInfoPanel
+  - paint_drump_red
+  - paint_drump_green
+  - paint_drump_blue
   layers:
   - Default
   - TransparentFX
