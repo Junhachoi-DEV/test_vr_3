@@ -8,6 +8,7 @@ TagManager:
   - paint_drump_red
   - paint_drump_green
   - paint_drump_blue
+  - paint_drump_white
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - ground
   - grab_ignore_ray
   - marker_layer
-  - 
+  - grabbable_noline
   - 
   - 
   - 
