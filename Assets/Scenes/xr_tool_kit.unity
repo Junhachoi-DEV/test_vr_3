@@ -17442,6 +17442,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: kitchen_top
       objectReference: {fileID: 0}
+    - target: {fileID: 6155556689832794733, guid: 7b52b40698938274496bc769e18d5698,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1687551173}
+    - target: {fileID: 7270048953413285913, guid: 7b52b40698938274496bc769e18d5698,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1687551173}
+    - target: {fileID: 7687290369485803320, guid: 7b52b40698938274496bc769e18d5698,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1687551173}
+    - target: {fileID: 7966398545868679294, guid: 7b52b40698938274496bc769e18d5698,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1687551173}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b52b40698938274496bc769e18d5698, type: 3}
