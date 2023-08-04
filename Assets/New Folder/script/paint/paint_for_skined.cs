@@ -2,57 +2,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class paint_can : MonoBehaviour
+public class paint_for_skined : MonoBehaviour
 {
     public Material[] mat;
-    MeshRenderer mesh_r;
+    SkinnedMeshRenderer skinned_r;
 
     private void Start()
     {
-        mesh_r = GetComponent<MeshRenderer>();
-        
+        skinned_r = GetComponent<SkinnedMeshRenderer>();
         gameObject.layer = 10;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        
+
         if (other.CompareTag("paint_drump_red"))
         {
-            mesh_r.material = mat[0];
-           
+            
+            skinned_r.material = mat[0];
             gameObject.layer = 13;
         }
         else if (other.CompareTag("paint_drump_green"))
         {
-            mesh_r.material = mat[1];
             
+            skinned_r.material = mat[1];
             gameObject.layer = 13;
 
         }
-        else if(other.CompareTag("paint_drump_blue"))
+        else if (other.CompareTag("paint_drump_blue"))
         {
-            mesh_r.material = mat[2];
-           
+            
+            skinned_r.material = mat[2];
+
             gameObject.layer = 13;
         }
         else if (other.CompareTag("paint_drump_white"))
         {
-            mesh_r.material = mat[3];
-           
+            
+            skinned_r.material = mat[3];
 
             gameObject.layer = 13;
         }
         else if (other.CompareTag("paint_drump_black"))
         {
-            mesh_r.material = mat[4];
             
+            skinned_r.material = mat[4];
             gameObject.layer = 13;
         }
-    }
-
-    public void paint_reset()
-    {
-
     }
 }
