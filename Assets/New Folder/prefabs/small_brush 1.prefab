@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8127875703733355644}
-  m_Layer: 0
+  - component: {fileID: 5019500630854849645}
+  m_Layer: 10
   m_Name: Bone.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,6 +33,28 @@ Transform:
   m_Father: {fileID: 2460999103138067727}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5019500630854849645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807565857213897538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb987c463f7f864d9751be688949e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 4654794960584893689}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.05
+  isUseEachBoneForceSettings: 0
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders: []
+  debug: 1
+  threshold: 0.01
 --- !u!1 &1961297126853025846
 GameObject:
   m_ObjectHideFlags: 0
@@ -41,7 +64,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1422406525859709690}
-  m_Layer: 0
+  - component: {fileID: 3338072777636474919}
+  m_Layer: 10
   m_Name: Bone.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,6 +88,28 @@ Transform:
   m_Father: {fileID: 654947347222543002}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3338072777636474919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961297126853025846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb987c463f7f864d9751be688949e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 1599091055712217670}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.05
+  isUseEachBoneForceSettings: 0
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders: []
+  debug: 1
+  threshold: 0.01
 --- !u!1 &2026797438268328249
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +119,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1599091055712217670}
-  m_Layer: 0
+  - component: {fileID: 2973637241992780074}
+  m_Layer: 10
   m_Name: Bone.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,6 +143,28 @@ Transform:
   m_Father: {fileID: 1422406525859709690}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2973637241992780074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026797438268328249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb987c463f7f864d9751be688949e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 6850634583873311851}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.05
+  isUseEachBoneForceSettings: 0
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders: []
+  debug: 1
+  threshold: 0.01
 --- !u!1 &2780221922054146455
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +174,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1860027623010675039}
-  m_Layer: 0
+  - component: {fileID: 3221480686431697232}
+  m_Layer: 10
   m_Name: Bone.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,6 +198,28 @@ Transform:
   m_Father: {fileID: 7283245450989536724}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3221480686431697232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2780221922054146455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb987c463f7f864d9751be688949e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 654947347222543002}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.05
+  isUseEachBoneForceSettings: 0
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders: []
+  debug: 1
+  threshold: 0.01
 --- !u!1 &3642354480819252380
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +229,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4163558849031763494}
-  m_Layer: 0
+  - component: {fileID: 910629203781953080}
+  - component: {fileID: 910629203781953079}
+  m_Layer: 10
   m_Name: small_brush 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,8 +254,161 @@ Transform:
   - {fileID: 6438143780004709151}
   - {fileID: 3922220416873500283}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &910629203781953080
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3642354480819252380}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &910629203781953079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3642354480819252380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f9d66229579f148b65864dad2ef76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders:
+  - {fileID: 7239994403270654001}
+  - {fileID: 7799174011961709329}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 0}
+  m_SecondaryAttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_ReinitializeDynamicAttachEverySingleGrab: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 5
+  m_TightenPosition: 0.5
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 5
+  m_TightenRotation: 0.5
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
 --- !u!1 &4696506837102301814
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,7 +418,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6850634583873311851}
-  m_Layer: 0
+  - component: {fileID: 8379372398122680935}
+  m_Layer: 10
   m_Name: Bone.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,6 +442,28 @@ Transform:
   m_Father: {fileID: 1599091055712217670}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8379372398122680935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696506837102301814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb987c463f7f864d9751be688949e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 2460999103138067727}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.05
+  isUseEachBoneForceSettings: 0
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders: []
+  debug: 1
+  threshold: 0.01
 --- !u!1 &5769778356190455514
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +473,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2460999103138067727}
-  m_Layer: 0
+  - component: {fileID: 7311176186942846667}
+  m_Layer: 10
   m_Name: Bone.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,6 +497,28 @@ Transform:
   m_Father: {fileID: 6850634583873311851}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7311176186942846667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769778356190455514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb987c463f7f864d9751be688949e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 8127875703733355644}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.05
+  isUseEachBoneForceSettings: 0
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders: []
+  debug: 1
+  threshold: 0.01
 --- !u!1 &5787535027863374349
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +528,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4654794960584893689}
-  m_Layer: 0
+  - component: {fileID: 8502230413573174506}
+  m_Layer: 10
   m_Name: Bone.007_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,6 +551,20 @@ Transform:
   m_Father: {fileID: 8127875703733355644}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8502230413573174506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5787535027863374349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e62e5e73ccda8b44ea227a4e217d1f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mSpringManager: {fileID: 8076046210310272681}
+  mTargetBoneAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &6911039396383059186
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +574,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5005535362413700792}
-  m_Layer: 0
+  - component: {fileID: 8076046210310272681}
+  m_Layer: 10
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,6 +598,77 @@ Transform:
   m_Father: {fileID: 4163558849031763494}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8076046210310272681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6911039396383059186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e940db9a1b7a744c963957c9e3e4089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dynamicRatio: 0.2
+  stiffnessForce: 0.01
+  stiffnessCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dragForce: 1
+  dragCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  springBones:
+  - {fileID: 5019500630854849645}
+  - {fileID: 7311176186942846667}
+  - {fileID: 8379372398122680935}
+  - {fileID: 2973637241992780074}
+  - {fileID: 3338072777636474919}
+  - {fileID: 5316792793441143384}
+  - {fileID: 3221480686431697232}
 --- !u!1 &7032635099483364456
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7283245450989536724}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +712,8 @@ GameObject:
   - component: {fileID: 3922220416873500283}
   - component: {fileID: 5844962400758835232}
   - component: {fileID: 174035261210003503}
-  m_Layer: 0
+  - component: {fileID: 7239994403270654001}
+  m_Layer: 10
   m_Name: ferrule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,6 +786,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7239994403270654001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7092301778135306295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08751367, y: 0.02948207, z: 0.28768355}
+  m_Center: {x: 0.000000033527613, y: 0.000000106636435, z: -0.039734103}
 --- !u!1 &7561613101258747081
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +809,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6438143780004709151}
   - component: {fileID: 1040554648609105200}
+  - component: {fileID: 7799174011961709329}
+  - component: {fileID: 7799174011961709328}
   m_Layer: 0
   m_Name: bristles.001
   m_TagString: Untagged
@@ -457,7 +853,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1924713315481281984, guid: 547478755e066e146a6ee5dc081eb444, type: 3}
+  - {fileID: 2100000, guid: 183563a0c2ddc3d4681fa84a59842391, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -498,6 +894,37 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00007755868, y: 0.034571297, z: -0.00008254871}
     m_Extent: {x: 0.035643473, y: 0.03545995, z: 0.011770231}
   m_DirtyAABB: 0
+--- !u!65 &7799174011961709329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7561613101258747081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08342562, y: 0.027548915, z: 0.082996055}
+  m_Center: {x: 0.000090765294, y: 0.00009660066, z: 0.14470002}
+--- !u!114 &7799174011961709328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7561613101258747081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd71406bb6614e47b430158160c7410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat:
+  - {fileID: 2100000, guid: db3aeb3d7e828a14581e40a4d634ae94, type: 2}
+  - {fileID: 2100000, guid: 1c470d66c23375a4882ef334d81f0816, type: 2}
+  - {fileID: 2100000, guid: 2026c01c59b81bf4bb0a6824fdab35ca, type: 2}
+  - {fileID: 2100000, guid: d81e11982dc03cc4bb079c68d4dcc95a, type: 2}
+  - {fileID: 2100000, guid: 8ab2362a3ec9a174b9a70f12d5f8a549, type: 2}
 --- !u!1 &8984065776333314631
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +934,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 654947347222543002}
-  m_Layer: 0
+  - component: {fileID: 5316792793441143384}
+  m_Layer: 10
   m_Name: Bone.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,3 +958,25 @@ Transform:
   m_Father: {fileID: 1860027623010675039}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5316792793441143384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8984065776333314631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb987c463f7f864d9751be688949e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  child: {fileID: 1422406525859709690}
+  boneAxis: {x: 0, y: 1, z: 0}
+  radius: 0.05
+  isUseEachBoneForceSettings: 0
+  stiffnessForce: 0.01
+  dragForce: 0.4
+  springForce: {x: 0, y: -0.0001, z: 0}
+  colliders: []
+  debug: 1
+  threshold: 0.01
