@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -45,3 +46,4 @@ static class yield_cache
         return wfs_real;
     }
 }
+*/
