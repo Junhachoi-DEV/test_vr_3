@@ -8,6 +8,8 @@ public class paint_can : MonoBehaviour
     MeshRenderer mesh_r;
     SkinnedMeshRenderer skinned_mech_r;
 
+    public CollisionPainter collision_r;
+
     private void Start()
     {
         mesh_r = GetComponent<MeshRenderer>();
@@ -23,7 +25,8 @@ public class paint_can : MonoBehaviour
         {
             if (mesh_r) { mesh_r.material = mat[0]; }
             else if(skinned_mech_r) { skinned_mech_r.material = mat[0]; }
-           
+
+            collision_r.paintColor = mat[0].color;
             gameObject.layer = 13;
         }
         else if (other.CompareTag("paint_drump_green"))
@@ -31,14 +34,15 @@ public class paint_can : MonoBehaviour
             if (mesh_r) { mesh_r.material = mat[1]; }
             else if (skinned_mech_r) { skinned_mech_r.material = mat[1]; }
 
+            collision_r.paintColor = mat[1].color;
             gameObject.layer = 13;
-
         }
         else if(other.CompareTag("paint_drump_blue"))
         {
             if (mesh_r) { mesh_r.material = mat[2]; }
             else if (skinned_mech_r) { skinned_mech_r.material = mat[2]; }
 
+            collision_r.paintColor = mat[2].color;
             gameObject.layer = 13;
         }
         else if (other.CompareTag("paint_drump_white"))
@@ -46,7 +50,7 @@ public class paint_can : MonoBehaviour
             if (mesh_r) { mesh_r.material = mat[3]; }
             else if (skinned_mech_r) { skinned_mech_r.material = mat[3]; }
 
-
+            collision_r.paintColor = mat[3].color;
             gameObject.layer = 13;
         }
         else if (other.CompareTag("paint_drump_black"))
@@ -54,6 +58,15 @@ public class paint_can : MonoBehaviour
             if (mesh_r) { mesh_r.material = mat[4]; }
             else if (skinned_mech_r) { skinned_mech_r.material = mat[4]; }
 
+            collision_r.paintColor = mat[4].color;
+            gameObject.layer = 13;
+        }
+        else if (other.CompareTag("paint_drump_erase"))
+        {
+            if (mesh_r) { mesh_r.material = mat[5]; }
+            else if (skinned_mech_r) { skinned_mech_r.material = mat[5]; }
+
+            collision_r.paintColor = mat[5].color;
             gameObject.layer = 13;
         }
     }
