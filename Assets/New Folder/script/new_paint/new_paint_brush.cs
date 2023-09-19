@@ -31,6 +31,7 @@ public class new_paint_brush : MonoBehaviour
 
     void Drow()
     {
+       
         if(Physics.Raycast(_tip.position, transform.up, out _touch, _tip_height))
         {
             if (_touch.transform.CompareTag("new_paint_wall"))
