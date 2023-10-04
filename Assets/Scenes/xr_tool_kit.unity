@@ -14264,10 +14264,10 @@ MonoBehaviour:
   m_ActivateUsage: 2
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.1
-  m_RotateAnchorLeft: 16
-  m_RotateAnchorRight: 17
-  m_MoveObjectIn: 14
-  m_MoveObjectOut: 15
+  m_RotateAnchorLeft: 0
+  m_RotateAnchorRight: 0
+  m_MoveObjectIn: 0
+  m_MoveObjectOut: 0
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
 --- !u!1 &883959494 stripped
@@ -15032,6 +15032,19 @@ BoxCollider:
   m_GameObject: {fileID: 936371466}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3167524, y: 1.9737928, z: 3.3496761}
+  m_Center: {x: -0.0044382997, y: 0.34513697, z: -0.6181431}
+--- !u!65 &936371474
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936371466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.3167524, y: 1.9737928, z: 3.3496761}
@@ -20947,10 +20960,10 @@ MonoBehaviour:
   m_ActivateUsage: 2
   m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.2
-  m_RotateAnchorLeft: 16
-  m_RotateAnchorRight: 17
-  m_MoveObjectIn: 14
-  m_MoveObjectOut: 15
+  m_RotateAnchorLeft: 0
+  m_RotateAnchorRight: 0
+  m_MoveObjectIn: 0
+  m_MoveObjectOut: 0
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
 --- !u!135 &1749491185
