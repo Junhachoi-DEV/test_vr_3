@@ -16,6 +16,7 @@ public class locomotion_controller : MonoBehaviour
     public bool enable_left_teleport { get; set; } = true;
     //public bool enable_right_teleport { get; set; }= true;
 
+    bool stop_time;
 
     void Update()
     {
@@ -33,7 +34,18 @@ public class locomotion_controller : MonoBehaviour
                 !is_left_interactor_ray_hovering);
         }
 
-
+        if(Input.GetButtonDown("XRI_Left_PrimaryButton") && !stop_time)
+        {
+            Time.timeScale = 0;
+            stop_time = true;
+            Debug.Log("stop");
+        }
+        else if (Input.GetButtonDown("XRI_Left_PrimaryButton") && stop_time)
+        {
+            Time.timeScale = 1;
+            stop_time = false;
+            Debug.Log("non stop");
+        }
     }
 
     public bool check_if_activated(XRController controller)
@@ -42,5 +54,8 @@ public class locomotion_controller : MonoBehaviour
         return is_actiated;
     }
 
-    
+    void time_controll()
+    {
+
+    }
 }
