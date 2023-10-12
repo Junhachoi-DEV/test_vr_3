@@ -6,4 +6,4 @@ vr(가상세계)를 통해 집수리 하기 및 인테리어 체험
 2023.04.23 ~ 진행중  
 
 ## TITLE
-![공동작](https://github.com/Junhachoi-GameDav/My_Room/assets/87477736/72ee0d38-bc21-41c4-b54e-09090cc6ebf9)
+![공동작_logo](https://github.com/Junhachoi-GameDav/My_Room/assets/87477736/8f9de716-c6fa-4e3a-a4cb-8aa16495bf23)
