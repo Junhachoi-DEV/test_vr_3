@@ -6,10 +6,10 @@ TagManager:
   tags:
   - SamplesInfoPanel
   - paint_drump_red
-  - paint_drump_green
-  - paint_drump_blue
-  - paint_drump_white
-  - paint_drump_black
+  - chair_part
+  - paint_drump_erase
+  - refrigerator
+  - chair_main
   layers:
   - Default
   - TransparentFX
