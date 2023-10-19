@@ -14,6 +14,8 @@ public class paint_can : MonoBehaviour
     {
         mesh_r = GetComponent<MeshRenderer>();
         skinned_mech_r =GetComponent<SkinnedMeshRenderer>();
+        mat[mat.Length - 1].color = Color.white;
+        mat[0].color = Color.white;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,6 +23,7 @@ public class paint_can : MonoBehaviour
         
         if (other.CompareTag("paint_drump_red"))
         {
+            mat[0].color = mat[mat.Length-1].color;
             if (mesh_r) { mesh_r.material = mat[0]; }
             else if(skinned_mech_r) { skinned_mech_r.material = mat[0]; }
 
