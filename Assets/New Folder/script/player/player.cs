@@ -47,14 +47,13 @@ public class player : MonoBehaviour
             tools_menu.transform.rotation = tools_menu_pos.rotation;
             for (int i = 0; i < tools_pos.Length; i++)
             {
-                tools[i].GetComponent<Rigidbody>().useGravity = false;
-                tools[i].GetComponent<Rigidbody>().velocity = Vector3.zero;
-                
                 ChangeLayerRecursively(tools[i], 5); //ui
 
                 tools[i].SetActive(true);
                 tools[i].transform.position = tools_pos[i].position;
                 tools[i].transform.rotation = tools_pos[i].rotation;
+                tools[i].GetComponent<Rigidbody>().useGravity = false;
+                tools[i].GetComponent<Rigidbody>().velocity = Vector3.zero;
             }
             tools_menu.SetActive(true);
             is_tools_open = true;
@@ -74,9 +73,15 @@ public class player : MonoBehaviour
         tools_menu.SetActive(false);
         is_tools_open = false;
     }
+    public void open_menu_false()
+    {
+        menu.SetActive(false);
+        is_open_menu = false;
+    }
+
     public void ChangeLayer_grabble(int tools_num)
     {
-        ChangeLayerRecursively(tools[tools_num], 10);
+        ChangeLayerRecursively(tools[tools_num], 10); //grabbale
     }
 
     private void ChangeLayerRecursively(GameObject obj, int layer) //재귀함수로 모든 하위 오브젝트 레이어 변경
