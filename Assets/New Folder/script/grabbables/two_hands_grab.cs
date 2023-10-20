@@ -18,8 +18,7 @@ public class two_hands_grab : XRGrabInteractable
         }
     }
 
-    int num = 0;
-
+    [System.Obsolete]
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
     {
         if(second_interactor && selectingInteractor)
