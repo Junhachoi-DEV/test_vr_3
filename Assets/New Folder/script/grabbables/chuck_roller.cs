@@ -5,6 +5,7 @@ using UnityEngine;
 public class chuck_roller : MonoBehaviour
 {
     public bool is_grab;
+    public bool is_rolling;
     public float speed;
     float rotate_speed;
     private void Update()
@@ -18,8 +19,10 @@ public class chuck_roller : MonoBehaviour
         if (Input.GetButton("XRI_Right_TriggerButton") && is_grab)
         {
             rotate_speed += speed;
+            is_rolling = true;
             transform.localRotation = Quaternion.Euler(rotate_speed, 0f, 90f);
         }
+        else { is_rolling = false; }
     }
 
     public void grab_true()

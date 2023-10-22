@@ -10,6 +10,7 @@ TagManager:
   - paint_drump_erase
   - refrigerator
   - chair_main
+  - chuck
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - grabbable_noline
   - second_grab
   - light
-  - 
+  - chair_next_part
   - 
   - 
   - 
