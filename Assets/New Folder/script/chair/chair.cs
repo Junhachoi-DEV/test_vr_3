@@ -17,13 +17,14 @@ public class chair : MonoBehaviour
 
     public bool is_touch;
     public bool is_drilled;
+    public bool is_counting;
 
     chair_part _chair_part;
     chuck_roller _chuck_roller;
 
     public void chair_part_active(bool value)
     {
-        if (count_num < chair_parts.Length)
+        if (count_num < chair_parts.Length && !is_counting)
         {
             next_chir_parts[count_num].SetActive(value);
         }
@@ -67,21 +68,22 @@ public class chair : MonoBehaviour
 
         for (int i = 5; i >= 0; i--)
         {
+            is_counting = true;
             chair_attach_timer_txt.text = i.ToString();
             for (int j = 0; j < 10; j++)
             {
                 chair_attach_timer_img.fillAmount += 0.1f;
                 yield return yeild_controller.WaitForSeconds(0.1f);
-                if (is_drilled) { break; }
+                if (is_drilled) { is_counting = false; break; }
             }
             chair_attach_timer_img.fillAmount = 0;
-            if (is_drilled) { break; }
+            if (is_drilled) { is_counting = false; break; }
         }
         if (!is_drilled)
         {
             chair_attach_timer_obj.SetActive(false);
             chair_parts[part_num].SetActive(false);
-            next_chir_parts[part_num].SetActive(true);
+            if (is_touch) { next_chir_parts[part_num].SetActive(true); }
             _chair_part.is_attach = true;
             _chair_part.gameObject.SetActive(true);
             _chair_part.gameObject.transform.position = chair_parts[part_num].transform.position;
@@ -89,11 +91,8 @@ public class chair : MonoBehaviour
             yield return yeild_controller.WaitForSeconds(0.5f);
             _chair_part.is_attach = false;
         }
-        else
-        {
-            yield return yeild_controller.WaitForSeconds(0.5f);
-            is_drilled = false;
-        }
-        
+        yield return yeild_controller.WaitForSeconds(0.1f);
+        is_drilled = false;
+        is_counting = false;
     }
 }
