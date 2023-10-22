@@ -32,7 +32,7 @@ public class chair : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("chair_part")&& is_touch)
+        if (other.CompareTag("chair_part") && is_touch)
         {
             _chair_part = other.GetComponent<chair_part>();
             part_num = _chair_part.part_num;
@@ -54,6 +54,7 @@ public class chair : MonoBehaviour
                 _chair_part.is_attach = false;
                 chair_attach_timer_obj.SetActive(false);
                 chair_attach_timer_img.fillAmount = 0;
+                is_counting = false;
             }
         }
     }
@@ -65,19 +66,19 @@ public class chair : MonoBehaviour
     IEnumerator coro_count_timer()
     {
         chair_attach_timer_obj.SetActive(true);
-
+        is_counting = true;
         for (int i = 5; i >= 0; i--)
         {
-            is_counting = true;
             chair_attach_timer_txt.text = i.ToString();
             for (int j = 0; j < 10; j++)
             {
+                //Debug.Log("ddd");
                 chair_attach_timer_img.fillAmount += 0.1f;
                 yield return yeild_controller.WaitForSeconds(0.1f);
-                if (is_drilled) { is_counting = false; break; }
+                if (is_drilled) { break; }
             }
             chair_attach_timer_img.fillAmount = 0;
-            if (is_drilled) { is_counting = false; break; }
+            if (is_drilled) { break; }
         }
         if (!is_drilled)
         {

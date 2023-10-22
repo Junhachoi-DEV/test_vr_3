@@ -11281,6 +11281,7 @@ MonoBehaviour:
   count_num: 0
   is_touch: 0
   is_drilled: 0
+  is_counting: 0
 --- !u!1 &396926029
 GameObject:
   m_ObjectHideFlags: 0
