@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class turn_on_light : MonoBehaviour
 {
+    public AudioSource sfx;
     public GameObject[] lights;
-
-
     public MeshRenderer[] lightRenderer;
     public Material[] light_material;
     public Material nolight_material;
@@ -18,6 +17,7 @@ public class turn_on_light : MonoBehaviour
     {
         if (gameObject.CompareTag("Untagged") && num <= 0)
         {
+            sfx.Play();
             is_turn = !is_turn;
             for (int i = 0; i< lightRenderer.Length; i++)
             {
