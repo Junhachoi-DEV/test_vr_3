@@ -38,6 +38,7 @@ public class chair : MonoBehaviour
             part_num = _chair_part.part_num;
             if (part_num == count_num && !_chair_part.is_attach)
             {
+                is_drilled = false;
                 chair_parts[part_num].SetActive(true);
                 next_chir_parts[part_num].SetActive(false);
                 if (count_num < chair_parts.Length) { count_num++; } else { return; }
