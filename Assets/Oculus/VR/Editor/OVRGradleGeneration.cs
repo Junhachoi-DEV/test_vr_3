@@ -110,17 +110,17 @@ public class OVRGradleGeneration
 
 	public void OnPreprocessBuild(BuildReport report)
 	{
-		bool useOpenXR = OVRPluginInfo.IsOVRPluginOpenXRActivated();
+		//bool useOpenXR = OVRPluginInfo.IsOVRPluginOpenXRActivated();
 
 #if USING_XR_SDK_OPENXR
 		UnityEngine.Debug.LogWarning("The installation of Unity OpenXR Plugin is detected, which should NOT be used in production when developing Meta Quest apps for production. Please uninstall the package, and install the Oculus XR Plugin from the Package Manager.");
 
 		// OpenXR Plugin will remove all native plugins if they are not under the Feature folder. Include OVRPlugin to the build if MetaXRFeature is enabled.
 		var metaXRFeature = FeatureHelpers.GetFeatureWithIdForBuildTarget(report.summary.platformGroup, Meta.XR.MetaXRFeature.featureId);
-		if (metaXRFeature.enabled && !useOpenXR)
-		{
-			throw new BuildFailedException("OpenXR backend for Oculus Plugin is disabled, which is required to support Unity OpenXR Plugin. Please enable OpenXR backend for Oculus Plugin through the 'Oculus -> Tools -> OpenXR' menu.");
-		}
+		//if (metaXRFeature.enabled)
+		//{
+		//	throw new BuildFailedException("OpenXR backend for Oculus Plugin is disabled, which is required to support Unity OpenXR Plugin. Please enable OpenXR backend for Oculus Plugin through the 'Oculus -> Tools -> OpenXR' menu.");
+		//}
 
 		string ovrRootPath = OVRPluginInfo.GetUtilitiesRootPath();
 		var importers = PluginImporter.GetAllImporters();

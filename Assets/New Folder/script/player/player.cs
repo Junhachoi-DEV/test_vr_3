@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class player : MonoBehaviour
 {
