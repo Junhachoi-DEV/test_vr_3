@@ -30,7 +30,6 @@ public class locomotion_controller : MonoBehaviour
             left_teleport_ray.gameObject.SetActive(enable_left_teleport &&
                 check_if_activated(left_teleport_ray) &&
                 !is_left_interactor_ray_hovering);
-            Debug.Log("ddd");
         }
 
     }

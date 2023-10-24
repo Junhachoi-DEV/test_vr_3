@@ -7,7 +7,7 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class player : MonoBehaviour
 {
-
+    public AudioSource[] audioSources;
     public GameObject menu;
     public GameObject tools_menu;
     public GameObject[] tools;
@@ -28,6 +28,7 @@ public class player : MonoBehaviour
     {
         if (Input.GetButtonDown("XRI_Left_PrimaryButton") && !is_open_menu)
         {
+            audioSources[0].Play();
             menu.transform.position = menu_pos.position;
             menu.transform.rotation = menu_pos.rotation;
             menu.SetActive(true);
@@ -35,6 +36,7 @@ public class player : MonoBehaviour
         }
         else if (Input.GetButtonDown("XRI_Left_PrimaryButton") && is_open_menu)
         {
+            audioSources[1].Play();
             menu.SetActive(false);
             is_open_menu = false;
         }
@@ -43,6 +45,7 @@ public class player : MonoBehaviour
     {
         if (Input.GetButtonDown("XRI_Right_PrimaryButton") && !is_tools_open)
         {
+            audioSources[0].Play();
             tools_menu.transform.position = tools_menu_pos.position;
             tools_menu.transform.rotation = tools_menu_pos.rotation;
             for (int i = 0; i < tools_pos.Length; i++)
@@ -60,6 +63,7 @@ public class player : MonoBehaviour
         }
         else if(Input.GetButtonDown("XRI_Right_PrimaryButton") && is_tools_open) //아무것도 집지 않았을경우
         {
+            audioSources[1].Play();
             tools_menu.SetActive(false);
             for (int i = 0; i < tools_pos.Length; i++)
             {

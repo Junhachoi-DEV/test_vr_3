@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class chair : MonoBehaviour
 {
+    public AudioSource[] audioSources;
     public GameObject[] chair_parts;
     public GameObject[] next_chir_parts;
 
@@ -39,6 +40,7 @@ public class chair : MonoBehaviour
             if (part_num == count_num && !_chair_part.is_attach)
             {
                 is_drilled = false;
+                audioSources[0].Play();
                 chair_parts[part_num].SetActive(true);
                 next_chir_parts[part_num].SetActive(false);
                 if (count_num < chair_parts.Length) { count_num++; } else { return; }
@@ -52,6 +54,7 @@ public class chair : MonoBehaviour
             if (is_drilled)
             {
                 if(count_num < chair_parts.Length) { next_chir_parts[count_num].SetActive(true); }
+                audioSources[audioSources.Length-1].Play(); //드릴 사운드
                 _chair_part.is_attach = false;
                 chair_attach_timer_obj.SetActive(false);
                 chair_attach_timer_img.fillAmount = 0;
@@ -70,6 +73,7 @@ public class chair : MonoBehaviour
         is_counting = true;
         for (int i = 5; i >= 0; i--)
         {
+            audioSources[2].Play(); // timer sound
             chair_attach_timer_txt.text = i.ToString();
             for (int j = 0; j < 10; j++)
             {
@@ -83,6 +87,7 @@ public class chair : MonoBehaviour
         }
         if (!is_drilled)
         {
+            audioSources[1].Play();
             chair_attach_timer_obj.SetActive(false);
             chair_parts[part_num].SetActive(false);
             if (is_touch) { next_chir_parts[part_num].SetActive(true); }
