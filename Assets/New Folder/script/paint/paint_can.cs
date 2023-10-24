@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class paint_can : MonoBehaviour
 {
+    public AudioSource[] audioSources;
     public Material[] mat;
     MeshRenderer mesh_r;
     SkinnedMeshRenderer skinned_mech_r;
@@ -28,6 +29,7 @@ public class paint_can : MonoBehaviour
             else if(skinned_mech_r) { skinned_mech_r.material = mat[0]; }
 
             collision_r.paintColor = mat[0].color;
+            audioSources[0].Play();
         }
         else if (other.CompareTag("paint_drump_erase"))
         {
@@ -35,6 +37,11 @@ public class paint_can : MonoBehaviour
             else if (skinned_mech_r) { skinned_mech_r.material = mat[2]; }
 
             collision_r.paintColor = mat[1].color;
+            audioSources[1].Play();
+        }
+        else if (other.CompareTag("paint_wall"))
+        {
+            audioSources[2].Play();
         }
     }
 
