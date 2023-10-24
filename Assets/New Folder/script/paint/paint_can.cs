@@ -15,7 +15,7 @@ public class paint_can : MonoBehaviour
     {
         mesh_r = GetComponent<MeshRenderer>();
         skinned_mech_r =GetComponent<SkinnedMeshRenderer>();
-        mat[mat.Length - 1].color = Color.white;
+        mat[mat.Length - 1].color = Color.black;
         mat[0].color = Color.white;
     }
 
