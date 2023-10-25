@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
-using UnityEngine.XR.Interaction.Toolkit;
 using Unity.XR.CoreUtils; // xrrig는 이제 안쓴다고 한다. //이거 추가해야 xrorigin쓸수 있음
 
 public class continuous_movement : MonoBehaviour

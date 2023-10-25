@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
@@ -27,10 +26,10 @@ public class hand_presence : MonoBehaviour
         InputDevices.GetDevicesWithCharacteristics(controller_char, devices);
 
         //디바이스의 입력버튼 값을 디버그로 출력할것이다.
-        foreach (var item in devices)
-        {
-            Debug.Log(item.name + item.characteristics);
-        }
+        //foreach (var item in devices)
+        //{
+        //    Debug.Log(item.name + item.characteristics);
+        //}
 
         if (devices.Count > 0)
         {

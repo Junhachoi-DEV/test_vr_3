@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class paint_can : MonoBehaviour
@@ -43,10 +41,5 @@ public class paint_can : MonoBehaviour
         {
             audioSources[2].Play();
         }
-    }
-
-    public void paint_reset()
-    {
-
     }
 }
