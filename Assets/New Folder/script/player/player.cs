@@ -23,7 +23,7 @@ public class player : MonoBehaviour
     {
         if (Input.GetButtonDown("XRI_Left_PrimaryButton") && !is_open_menu)
         {
-            audioSources[0].Play();
+            audioSources[2].Play();
             menu.transform.position = menu_pos.position;
             menu.transform.rotation = menu_pos.rotation;
             menu.SetActive(true);
@@ -31,7 +31,7 @@ public class player : MonoBehaviour
         }
         else if (Input.GetButtonDown("XRI_Left_PrimaryButton") && is_open_menu)
         {
-            audioSources[1].Play();
+            audioSources[3].Play();
             menu.SetActive(false);
             is_open_menu = false;
         }
