@@ -23,11 +23,11 @@ public class sound_manager : MonoBehaviour
 
     public void SetBGMVolume(float volume)
     {
-        m_AudioMixer.SetFloat("BGM", Mathf.Log10(volume) * 20);
+        m_AudioMixer.SetFloat("bgm", Mathf.Log10(volume) * 20);
     }
 
     public void SetSFXVolume(float volume)
     {
-        m_AudioMixer.SetFloat("SFX", Mathf.Log10(volume) * 20);
+        m_AudioMixer.SetFloat("sfx", Mathf.Log10(volume) * 20);
     }
 }

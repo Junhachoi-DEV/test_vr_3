@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class player : MonoBehaviour
+public class player_ui_controller : MonoBehaviour
 {
     public AudioSource[] audioSources;
     public GameObject menu;

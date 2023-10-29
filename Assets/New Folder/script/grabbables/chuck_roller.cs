@@ -14,7 +14,7 @@ public class chuck_roller : MonoBehaviour
 
     public void obj_rotate()
     {
-        if (Input.GetButton("XRI_Right_TriggerButton") && is_grab)
+        if ((Input.GetButton("XRI_Right_TriggerButton")|| Input.GetButton("XRI_Left_TriggerButton")) && is_grab)
         {
             rotate_speed += speed;
             is_rolling = true;
