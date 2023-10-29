@@ -9,11 +9,9 @@ public class blind : MonoBehaviour
     public Transform end_pos;
 
     public float speed;
-
-    void Start()
-    {
-        bottom.transform.position = start_pos.position;
-    }
+    bool is_up_down;
+    bool is_touched;
+    int num;
 
     void Update()
     {
@@ -22,13 +20,31 @@ public class blind : MonoBehaviour
 
     public void blind_controller()
     {
-        if(Input.GetMouseButton(0) && bottom.transform.position.y > end_pos.position.y)
+        if(is_touched && is_up_down && bottom.transform.position.y > end_pos.position.y)
         {
             bottom.transform.Translate(Vector3.down * speed * Time.deltaTime);
         }
-        else if (Input.GetMouseButton(1) && bottom.transform.position.y < start_pos.position.y)
+        else if (is_touched && !is_up_down && bottom.transform.position.y < start_pos.position.y)
         {
             bottom.transform.Translate(Vector3.up * speed * Time.deltaTime);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (gameObject.CompareTag("Untagged") && num <=0)
+        {
+            is_touched = true;
+            is_up_down = !is_up_down;
+            num++; //한번만 실행
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (gameObject.CompareTag("Untagged"))
+        {
+            is_touched = false;
+            num= 0;
         }
     }
 }
