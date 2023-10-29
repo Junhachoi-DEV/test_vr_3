@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class chuck_roller : MonoBehaviour
 {
+    public AudioSource sfx;
     public bool is_grab;
     public bool is_rolling;
     public float speed;
@@ -21,6 +22,15 @@ public class chuck_roller : MonoBehaviour
             transform.localRotation = Quaternion.Euler(rotate_speed, 0f, 90f);
         }
         else { is_rolling = false; }
+
+        if ((Input.GetButtonDown("XRI_Right_TriggerButton") || Input.GetButtonDown("XRI_Left_TriggerButton")) && is_grab)
+        {
+            sfx.Play();
+        }
+        else if((Input.GetButtonUp("XRI_Right_TriggerButton") || Input.GetButtonUp("XRI_Left_TriggerButton")) || !is_grab)
+        {
+            sfx.Stop();
+        }
     }
 
     public void grab_true()
