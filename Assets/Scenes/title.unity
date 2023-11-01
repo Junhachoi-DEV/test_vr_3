@@ -378,10 +378,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   left_teleport_ray: {fileID: 2033616389}
+  right_teleport_ray: {fileID: 0}
   teleport_activation_button: 2
   activation_threshold: 0.1
   left_interactor_ray: {fileID: 2034717443}
   right_interactor_ray: {fileID: 795914920}
+  is_hand_change: 0
 --- !u!114 &327889387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +569,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607949871}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.094}
+  m_LocalPosition: {x: 0, y: 0, z: 1.024}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1665,8 +1667,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325915014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 2.9198}
+  m_LocalScale: {x: 1, y: 1, z: 1.5839136}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
