@@ -23,4 +23,9 @@ public class ui_controller : MonoBehaviour
         ui_s[3].transform.position = option_child_pos.position;
         ui_s[3].transform.rotation = option_child_pos.rotation;
     }
+    public void explain_pos()
+    {
+        ui_s[4].transform.position = menu_child_pos.position;
+        ui_s[4].transform.rotation = menu_child_pos.rotation;
+    }
 }
