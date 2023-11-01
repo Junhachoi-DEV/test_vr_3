@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using static UnityEngine.Rendering.DebugUI;
 
 public class tutorial_goal : MonoBehaviour
 {
@@ -56,6 +53,9 @@ public class tutorial_goal : MonoBehaviour
                 break;
             case 3:
                 _tutorial.start_icon.SetActive(true);
+                break;
+            default:
+                num = 3;
                 break;
         }
 
