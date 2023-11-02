@@ -48,10 +48,10 @@ public class player_ui_controller : MonoBehaviour
                 ChangeLayerRecursively(tools[i], 5); //ui
 
                 tools[i].SetActive(true);
-                tools[i].transform.position = tools_pos[i].position;
-                tools[i].transform.rotation = tools_pos[i].rotation;
                 tools[i].GetComponent<Rigidbody>().useGravity = false;
                 tools[i].GetComponent<Rigidbody>().velocity = Vector3.zero;
+                tools[i].transform.position = tools_pos[i].position;
+                tools[i].transform.rotation = tools_pos[i].rotation;
             }
             tools_menu.SetActive(true);
             is_tools_open = true;
