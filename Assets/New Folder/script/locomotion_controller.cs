@@ -27,15 +27,13 @@ public class locomotion_controller : MonoBehaviour
         {
             bool is_left_interactor_ray_hovering = left_interactor_ray.TryGetHitInfo(out pos, out normal, out index, out valid_target);
             left_teleport_ray.gameObject.SetActive(enable_left_teleport &&
-                check_if_activated(left_teleport_ray) &&
-                !is_left_interactor_ray_hovering);
+                check_if_activated(left_teleport_ray));
         }
         else if (right_teleport_ray && is_hand_change)
         {
             bool is_right_interactor_ray_hovering = right_interactor_ray.TryGetHitInfo(out pos, out normal, out index, out valid_target);
             right_teleport_ray.gameObject.SetActive(enable_right_teleport &&
-                check_if_activated(right_teleport_ray) &&
-                !is_right_interactor_ray_hovering);
+                check_if_activated(right_teleport_ray));
         }
     }
 

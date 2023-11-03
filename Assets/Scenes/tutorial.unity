@@ -548,6 +548,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1603973428}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowHover
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1688814316}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -578,6 +591,19 @@ MonoBehaviour:
       - m_Target: {fileID: 1542727469}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1603973428}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowHover
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -651,8 +677,8 @@ MonoBehaviour:
   m_ControlPointDistance: 10
   m_ControlPointHeight: 5
   m_SampleFrequency: 20
-  m_HitDetectionType: 0
-  m_SphereCastRadius: 0.1
+  m_HitDetectionType: 1
+  m_SphereCastRadius: 0.03
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 1056
@@ -8395,10 +8421,60 @@ MonoBehaviour:
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1701465652}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1701465650}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1701465652}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1701465650}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
@@ -19358,10 +19434,60 @@ MonoBehaviour:
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 132863770}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 132863768}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 132863770}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 132863768}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
@@ -21448,6 +21574,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 581540781}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowHover
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1688814316}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
@@ -21478,6 +21617,19 @@ MonoBehaviour:
       - m_Target: {fileID: 1677822050}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 581540781}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowHover
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21551,8 +21703,8 @@ MonoBehaviour:
   m_ControlPointDistance: 10
   m_ControlPointHeight: 5
   m_SampleFrequency: 20
-  m_HitDetectionType: 0
-  m_SphereCastRadius: 0.1
+  m_HitDetectionType: 1
+  m_SphereCastRadius: 0.03
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 1056
