@@ -10797,6 +10797,52 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &246329939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 246329940}
+  - component: {fileID: 246329941}
+  m_Layer: 0
+  m_Name: coll_hands:b_l_index3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &246329940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246329939}
+  m_LocalRotation: {x: -0.27946758, y: -0.88838995, z: 0.010369658, w: 0.36407924}
+  m_LocalPosition: {x: -0.018799543, y: -0.012642145, z: 0.05955279}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1603973426}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0.556, y: 90.436, z: -70.858}
+--- !u!136 &246329941
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246329939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.011589
+  m_Height: 0.052178685
+  m_Direction: 1
+  m_Center: {x: -0.007279588, y: -0.014321325, z: -0.000000020607564}
 --- !u!1 &248386953
 GameObject:
   m_ObjectHideFlags: 0
@@ -18498,6 +18544,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1677822049}
+  - {fileID: 1464830994}
   m_Father: {fileID: 1769076874}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36067,15 +36114,15 @@ MonoBehaviour:
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
   m_ControllerNode: 5
-  m_SelectUsage: 2
-  m_ActivateUsage: 2
-  m_UIPressUsage: 2
+  m_SelectUsage: 11
+  m_ActivateUsage: 11
+  m_UIPressUsage: 11
   m_AxisToPressThreshold: 0.2
   m_RotateAnchorLeft: 0
   m_RotateAnchorRight: 0
   m_MoveObjectIn: 0
   m_MoveObjectOut: 0
-  m_DirectionalAnchorRotation: 0
+  m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
 --- !u!1 &1460791817
 GameObject:
@@ -36168,6 +36215,52 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1464830993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464830994}
+  - component: {fileID: 1464830995}
+  m_Layer: 0
+  m_Name: hands_coll:b_r_index3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1464830994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464830993}
+  m_LocalRotation: {x: 0.2773547, y: -0.87429017, z: 0.0140710585, w: -0.3981121}
+  m_LocalPosition: {x: 0.022525787, y: -0.0142223835, z: 0.051936507}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 581540779}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: -3.6, y: -90.281, z: -109.663994}
+--- !u!136 &1464830995
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464830993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.014344881
+  m_Height: 0.05232501
+  m_Direction: 1
+  m_Center: {x: -0.00000006782838, y: -0.01567408, z: -0.009033938}
 --- !u!1 &1468294709
 GameObject:
   m_ObjectHideFlags: 0
@@ -37514,6 +37607,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5003543699152485326, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
+        type: 3}
+      propertyPath: show_controller
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
         type: 3}
       propertyPath: m_RootOrder
@@ -37846,7 +37944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left_teleport_ray: {fileID: 1636855414}
   right_teleport_ray: {fileID: 1453814969}
-  teleport_activation_button: 2
+  teleport_activation_button: 11
   activation_threshold: 0.1
   left_interactor_ray: {fileID: 862020163}
   right_interactor_ray: {fileID: 501005683}
@@ -39045,6 +39143,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1542727468}
+  - {fileID: 246329940}
   m_Father: {fileID: 1769076874}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -40949,15 +41048,15 @@ MonoBehaviour:
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
   m_ControllerNode: 4
-  m_SelectUsage: 2
-  m_ActivateUsage: 2
-  m_UIPressUsage: 2
+  m_SelectUsage: 11
+  m_ActivateUsage: 11
+  m_UIPressUsage: 11
   m_AxisToPressThreshold: 0.2
   m_RotateAnchorLeft: 0
   m_RotateAnchorRight: 0
   m_MoveObjectIn: 0
   m_MoveObjectOut: 0
-  m_DirectionalAnchorRotation: 0
+  m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
 --- !u!1 &1638098814
 GameObject:
