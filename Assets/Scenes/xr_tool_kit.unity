@@ -12950,8 +12950,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1351359443}
+  m_Children: []
   m_Father: {fileID: 1769076874}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13000,9 +12999,9 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1351359444}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1551684940}
+        m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
+        m_MethodName: set_enable_right_teleport
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13012,9 +13011,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1551684940}
-        m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
-        m_MethodName: set_enable_right_teleport
+      - m_Target: {fileID: 581540781}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13027,9 +13027,9 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1351359444}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1551684940}
+        m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
+        m_MethodName: set_enable_right_teleport
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13039,9 +13039,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1551684940}
-        m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
-        m_MethodName: set_enable_right_teleport
+      - m_Target: {fileID: 581540781}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13124,8 +13125,8 @@ MonoBehaviour:
   m_ModelDeSelectTransition: 
   m_ControllerNode: 5
   m_SelectUsage: 2
-  m_ActivateUsage: 2
-  m_UIPressUsage: 2
+  m_ActivateUsage: 3
+  m_UIPressUsage: 3
   m_AxisToPressThreshold: 0.2
   m_RotateAnchorLeft: 0
   m_RotateAnchorRight: 0
@@ -15944,6 +15945,89 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &464939767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464939770}
+  - component: {fileID: 464939769}
+  - component: {fileID: 464939768}
+  m_Layer: 0
+  m_Name: Sphere_reticle_r
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!23 &464939768
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464939767}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7226a67b98be04445af9dc239a9d1c26, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &464939769
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464939767}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &464939770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464939767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &466456597
 GameObject:
   m_ObjectHideFlags: 0
@@ -16881,9 +16965,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.01
+  m_LineWidth: 0.005
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 0.3
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -16892,7 +16976,7 @@ MonoBehaviour:
       value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -16901,7 +16985,7 @@ MonoBehaviour:
       value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -16910,10 +16994,10 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 0}
+    key1: {r: 0, g: 0.7647059, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 1}
+    key3: {r: 0, g: 0, b: 0, a: 1}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
@@ -16928,8 +17012,8 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
-    atime3: 0
+    atime2: 65535
+    atime3: 65535
     atime4: 0
     atime5: 0
     atime6: 0
@@ -16939,10 +17023,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 0}
-    key1: {r: 1, g: 0, b: 0, a: 0}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 0}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 1}
+    key3: {r: 0, g: 0, b: 0, a: 1}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
@@ -16957,9 +17041,9 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
+    atime2: 65342
+    atime3: 65342
+    atime4: 59945
     atime5: 0
     atime6: 0
     atime7: 0
@@ -16968,8 +17052,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_BlockedColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    key1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    key0: {r: 1, g: 0.92156863, b: 0.015686275, a: 0}
+    key1: {r: 1, g: 0.92156863, b: 0.015686275, a: 0}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -16984,7 +17068,7 @@ MonoBehaviour:
     ctime5: 0
     ctime6: 0
     ctime7: 0
-    atime0: 0
+    atime0: 193
     atime1: 65535
     atime2: 0
     atime3: 0
@@ -16999,7 +17083,7 @@ MonoBehaviour:
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
-  m_Reticle: {fileID: 0}
+  m_Reticle: {fileID: 464939767}
   m_BlockedReticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
   m_StopLineAtSelection: 1
@@ -17145,6 +17229,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 501005681}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_lineLength
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -17160,36 +17257,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 501005681}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_lineLength
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1551684940}
         m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
         m_MethodName: set_enable_right_teleport
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1677822050}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1351359444}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17230,30 +17316,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1551684940}
         m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
         m_MethodName: set_enable_right_teleport
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1677822050}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1351359444}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17341,7 +17403,7 @@ MonoBehaviour:
   m_ControlPointHeight: 5
   m_SampleFrequency: 20
   m_HitDetectionType: 1
-  m_SphereCastRadius: 0.03
+  m_SphereCastRadius: 0.01
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 263201
@@ -18833,33 +18895,22 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1677822050}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1351359444}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1551684940}
         m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
         m_MethodName: set_enable_right_teleport
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 347729178}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18872,33 +18923,22 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1677822050}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1351359444}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1551684940}
         m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
         m_MethodName: set_enable_right_teleport
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 347729178}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19048,7 +19088,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &587565846
 GameObject:
@@ -22967,9 +23007,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e988983f96fe1dd48800bcdfc82f23e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineWidth: 0.01
+  m_LineWidth: 0.005
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 0.3
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -22978,7 +23018,7 @@ MonoBehaviour:
       value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -22987,7 +23027,7 @@ MonoBehaviour:
       value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -22996,10 +23036,10 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 0}
+    key1: {r: 0, g: 0.7647059, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 1}
+    key3: {r: 0, g: 0, b: 0, a: 1}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
@@ -23014,8 +23054,8 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
-    atime3: 0
+    atime2: 65535
+    atime3: 65535
     atime4: 0
     atime5: 0
     atime6: 0
@@ -23025,10 +23065,10 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 0}
-    key1: {r: 1, g: 0, b: 0, a: 0}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 1, g: 1, b: 1, a: 0}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 1}
+    key3: {r: 0, g: 0, b: 0, a: 1}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
@@ -23043,9 +23083,9 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
+    atime2: 65342
+    atime3: 65342
+    atime4: 59945
     atime5: 0
     atime6: 0
     atime7: 0
@@ -23054,8 +23094,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_BlockedColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    key1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    key0: {r: 1, g: 0.92156863, b: 0.015686275, a: 0}
+    key1: {r: 1, g: 0.92156863, b: 0.015686275, a: 0}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -23085,7 +23125,7 @@ MonoBehaviour:
   m_SmoothMovement: 0
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
-  m_Reticle: {fileID: 0}
+  m_Reticle: {fileID: 1981613994}
   m_BlockedReticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
   m_StopLineAtSelection: 1
@@ -23231,6 +23271,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 862020161}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_lineLength
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -23246,36 +23299,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 862020161}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRInteractorLineVisual,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_lineLength
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.3
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1551684940}
         m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
         m_MethodName: set_enable_left_teleport
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1542727469}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 876759597}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23316,30 +23358,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1551684940}
         m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
         m_MethodName: set_enable_left_teleport
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1542727469}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 876759597}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23427,7 +23445,7 @@ MonoBehaviour:
   m_ControlPointHeight: 5
   m_SampleFrequency: 20
   m_HitDetectionType: 1
-  m_SphereCastRadius: 0.03
+  m_SphereCastRadius: 0.01
   m_RaycastMask:
     serializedVersion: 2
     m_Bits: 263201
@@ -23754,99 +23772,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.056838505, y: 0.29856125, z: 0.16291489}
   m_Center: {x: 0.0029306484, y: 0.01611494, z: -0.0015564982}
---- !u!1001 &876759595
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 1149538203}
-    m_Modifications:
-    - target: {fileID: 5003543699152485325, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_Name
-      value: left_hand_presence
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485325, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485326, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: show_controller
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5db8e44b71a94e34bb652cb9a4e6661e, type: 3}
---- !u!4 &876759596 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-    type: 3}
-  m_PrefabInstance: {fileID: 876759595}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &876759597 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5003543699152485325, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-    type: 3}
-  m_PrefabInstance: {fileID: 876759595}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &883959494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1961297126853025846, guid: 744b2ec70b7e966428997a1522c7a747,
@@ -26097,7 +26022,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985642281
 GameObject:
@@ -28958,7 +28883,7 @@ RectTransform:
   - {fileID: 108672596}
   - {fileID: 1810190927}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -29102,8 +29027,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 876759596}
+  m_Children: []
   m_Father: {fileID: 1769076874}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29152,9 +29076,9 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 876759597}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1551684940}
+        m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
+        m_MethodName: set_enable_left_teleport
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29164,9 +29088,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1551684940}
-        m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
-        m_MethodName: set_enable_left_teleport
+      - m_Target: {fileID: 1603973428}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29179,9 +29104,9 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 876759597}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1551684940}
+        m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
+        m_MethodName: set_enable_left_teleport
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29191,9 +29116,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1551684940}
-        m_TargetAssemblyTypeName: locomotion_controller, Assembly-CSharp
-        m_MethodName: set_enable_left_teleport
+      - m_Target: {fileID: 1603973428}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -29276,8 +29202,8 @@ MonoBehaviour:
   m_ModelDeSelectTransition: 
   m_ControllerNode: 4
   m_SelectUsage: 2
-  m_ActivateUsage: 2
-  m_UIPressUsage: 2
+  m_ActivateUsage: 3
+  m_UIPressUsage: 3
   m_AxisToPressThreshold: 0.2
   m_RotateAnchorLeft: 0
   m_RotateAnchorRight: 0
@@ -32780,7 +32706,7 @@ Transform:
   - {fileID: 1616152238}
   - {fileID: 471884741}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1313300818
 GameObject:
@@ -33448,94 +33374,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1351359442
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 2
-    m_TransformParent: {fileID: 347729176}
-    m_Modifications:
-    - target: {fileID: 5003543699152485325, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_Name
-      value: right_hand_presence
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485325, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_AddedGameObjects: []
-  m_SourcePrefab: {fileID: 100100000, guid: e6a19e4c4893658479633f37ef6076c9, type: 3}
---- !u!4 &1351359443 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1351359442}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1351359444 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5003543699152485325, guid: e6a19e4c4893658479633f37ef6076c9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1351359442}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1356233219
 GameObject:
   m_ObjectHideFlags: 0
@@ -34181,7 +34019,7 @@ Transform:
   - {fileID: 1798574705}
   - {fileID: 849980830}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1384739482
 GameObject:
@@ -37001,7 +36839,7 @@ Transform:
   - {fileID: 1325395433}
   - {fileID: 986305948}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1476385891
 MonoBehaviour:
@@ -37142,7 +36980,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1504602429
 MonoBehaviour:
@@ -37823,7 +37661,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1522264675
 GameObject:
@@ -38259,12 +38097,6 @@ PrefabInstance:
 --- !u!4 &1542727468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5003543699152485327, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1542727467}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1542727469 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5003543699152485325, guid: 5db8e44b71a94e34bb652cb9a4e6661e,
     type: 3}
   m_PrefabInstance: {fileID: 1542727467}
   m_PrefabAsset: {fileID: 0}
@@ -39827,21 +39659,10 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542727469}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 876759597}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1149538205}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -39866,21 +39687,10 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542727469}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 876759597}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+      - m_Target: {fileID: 1149538205}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor,
+          Unity.XR.Interaction.Toolkit
+        m_MethodName: set_allowSelect
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42831,12 +42641,6 @@ PrefabInstance:
 --- !u!4 &1677822049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5003543699152485327, guid: e6a19e4c4893658479633f37ef6076c9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1677822048}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1677822050 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5003543699152485325, guid: e6a19e4c4893658479633f37ef6076c9,
     type: 3}
   m_PrefabInstance: {fileID: 1677822048}
   m_PrefabAsset: {fileID: 0}
@@ -49835,6 +49639,89 @@ Transform:
   m_Father: {fileID: 1074935502}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1981613994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1981613998}
+  - component: {fileID: 1981613997}
+  - component: {fileID: 1981613996}
+  m_Layer: 0
+  m_Name: Sphere_reticle_l
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!23 &1981613996
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981613994}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7226a67b98be04445af9dc239a9d1c26, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1981613997
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981613994}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1981613998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981613994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985951046
 GameObject:
   m_ObjectHideFlags: 0
@@ -50705,7 +50592,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2016977714
 MonoBehaviour:
@@ -51381,7 +51268,7 @@ Transform:
   - {fileID: 862435951}
   - {fileID: 1521233740}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2040179103
 MonoBehaviour:
@@ -51851,7 +51738,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063326300
 GameObject:
@@ -53656,7 +53543,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2136732793 stripped
 Transform:
@@ -54695,7 +54582,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306359564}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e179f811d7ad64148bbff77acf8144e5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.04
@@ -54709,7 +54596,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306359564}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e179f811d7ad64148bbff77acf8144e5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.04
@@ -56076,6 +55963,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4041159438000717040, guid: e5c630d1dcd263c42a69feceab453e4b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760858212880520356, guid: e5c630d1dcd263c42a69feceab453e4b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5732392478885634795, guid: e5c630d1dcd263c42a69feceab453e4b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -56326,7 +56223,7 @@ PrefabInstance:
     - target: {fileID: 543450653361098456, guid: d78815abfa5a057418145588a6888492,
         type: 3}
       propertyPath: m_VelocityScale
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 543450653361098456, guid: d78815abfa5a057418145588a6888492,
         type: 3}
@@ -56336,7 +56233,7 @@ PrefabInstance:
     - target: {fileID: 543450653361098456, guid: d78815abfa5a057418145588a6888492,
         type: 3}
       propertyPath: m_AngularVelocityScale
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 543450653361098456, guid: d78815abfa5a057418145588a6888492,
         type: 3}
@@ -56684,7 +56581,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332979535}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e179f811d7ad64148bbff77acf8144e5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.03
@@ -56698,7 +56595,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332979535}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e179f811d7ad64148bbff77acf8144e5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.03
@@ -56901,7 +56798,7 @@ MonoBehaviour:
   m_AttachEaseInTime: 0.15
   m_MovementType: 0
   m_VelocityDamping: 1
-  m_VelocityScale: 0.5
+  m_VelocityScale: 1
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
@@ -56913,7 +56810,7 @@ MonoBehaviour:
   m_SmoothRotationAmount: 5
   m_TightenRotation: 0.5
   m_ThrowOnDetach: 1
-  m_ThrowSmoothingDuration: 0.5
+  m_ThrowSmoothingDuration: 1
   m_ThrowSmoothingCurve:
     serializedVersion: 2
     m_Curve:
@@ -58066,7 +57963,7 @@ PrefabInstance:
     - target: {fileID: 910629203781953079, guid: 744b2ec70b7e966428997a1522c7a747,
         type: 3}
       propertyPath: m_VelocityScale
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 910629203781953079, guid: 744b2ec70b7e966428997a1522c7a747,
         type: 3}
@@ -58076,7 +57973,7 @@ PrefabInstance:
     - target: {fileID: 910629203781953079, guid: 744b2ec70b7e966428997a1522c7a747,
         type: 3}
       propertyPath: m_AngularVelocityScale
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 910629203781953079, guid: 744b2ec70b7e966428997a1522c7a747,
         type: 3}
@@ -62491,12 +62388,12 @@ PrefabInstance:
     - target: {fileID: 919132148868984714, guid: 2a83a26c0e880de4e959062512c8b29c,
         type: 3}
       propertyPath: m_ThrowVelocityScale
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132148868984714, guid: 2a83a26c0e880de4e959062512c8b29c,
         type: 3}
       propertyPath: m_AngularVelocityScale
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132148868984714, guid: 2a83a26c0e880de4e959062512c8b29c,
         type: 3}
@@ -62511,7 +62408,7 @@ PrefabInstance:
     - target: {fileID: 919132148868984714, guid: 2a83a26c0e880de4e959062512c8b29c,
         type: 3}
       propertyPath: m_ThrowAngularVelocityScale
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1031998349852957685, guid: 2a83a26c0e880de4e959062512c8b29c,
         type: 3}
@@ -62597,6 +62494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5816055692986299937, guid: 2a83a26c0e880de4e959062512c8b29c,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5816055692986299937, guid: 2a83a26c0e880de4e959062512c8b29c,
         type: 3}
