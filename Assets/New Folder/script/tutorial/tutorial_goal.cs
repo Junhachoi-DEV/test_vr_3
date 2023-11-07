@@ -50,6 +50,8 @@ public class tutorial_goal : MonoBehaviour
                 _tutorial.cube1.SetActive(false);
                 _tutorial.cube2.SetActive(false);
                 _tutorial.xr_origin.GetComponent<player_ui_controller>().enabled = true;
+                _tutorial.left_ray.GetComponent<XRInteractorLineVisual>().enabled = true;
+                _tutorial.right_ray.GetComponent<XRInteractorLineVisual>().enabled = true;
                 break;
             case 3:
                 _tutorial.start_icon.SetActive(true);
