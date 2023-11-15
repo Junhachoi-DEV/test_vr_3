@@ -7,6 +7,6 @@
 - 팀원 : 이선영 = 아트 담당<br>
 <br>
 개발기간 : 2023.04.23 ~ 2023.11.01<br>
-- 장르 : vr(가상세계)를 통해 집수리 하기 및 인테리어 체험
-- 사용엔진 : <img src="https://img.shields.io/badge/Unity3D-000000?style=for-the-badge&logo=Unity&logoColor=white"> version 2022.1.23.f1
-- 운영체제 : <img src="https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white"> 64 bit
+- 장르 : vr(가상세계)를 통해 집수리 하기 및 인테리어 체험<br>
+- 사용엔진 : <img src="https://img.shields.io/badge/Unity3D-000000?style=for-the-badge&logo=Unity&logoColor=white"> version 2022.1.23.f1<br>
+- 운영체제 : <img src="https://img.shields.io/badge/windows-0078D4?style=for-the-badge&logo=windows&logoColor=white"> 64 bit<br>
