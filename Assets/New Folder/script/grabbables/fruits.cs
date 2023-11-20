@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class fruits : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] parts;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("knife"))
+        {
+            for (int i = 0; i < parts.Length; i++)
+            {
+                parts[i].SetActive(true);
+                parts[i].transform.position = gameObject.transform.position;
+            }
+            gameObject.SetActive(false);
+        }
     }
 }
