@@ -11691,7 +11691,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 262863833}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0.011, z: -0.011}
+  m_LocalPosition: {x: -0, y: 0.023, z: -0.011}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17608,7 +17608,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 0}
+    key0: {r: 0, g: 0.7647059, b: 1, a: 0.19607843}
     key1: {r: 0, g: 0.7647059, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 1}
     key3: {r: 0, g: 0, b: 0, a: 1}
@@ -20150,6 +20150,12 @@ PrefabInstance:
 --- !u!4 &587742514 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4775379269913020, guid: 43013596d34a3704ab43ce6853fd5961,
+    type: 3}
+  m_PrefabInstance: {fileID: 587742513}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &587742515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1540040260711024, guid: 43013596d34a3704ab43ce6853fd5961,
     type: 3}
   m_PrefabInstance: {fileID: 587742513}
   m_PrefabAsset: {fileID: 0}
@@ -24457,7 +24463,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 0}
+    key0: {r: 0, g: 0.7647059, b: 1, a: 0.19607843}
     key1: {r: 0, g: 0.7647059, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 1}
     key3: {r: 0, g: 0, b: 0, a: 1}
@@ -30705,6 +30711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1093574260}
+  - component: {fileID: 1093574261}
   m_Layer: 0
   m_Name: sfx
   m_TagString: Untagged
@@ -30727,6 +30734,103 @@ Transform:
   m_Father: {fileID: 587742514}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1093574261
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093574259}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 4167954239882727178, guid: abc8401c6dedcf846b3b9b0adf34c3c3,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 7460b1f3370c2ea4b97cc2a4a48dd622, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.6
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1099684575
 GameObject:
   m_ObjectHideFlags: 0
@@ -32549,6 +32653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202973249}
   - component: {fileID: 1202973250}
+  - component: {fileID: 1202973251}
   m_Layer: 0
   m_Name: switch
   m_TagString: Untagged
@@ -32584,6 +32689,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.05, z: 0.05}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1202973251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202973248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3b145ec32db4f4087df3eba984b978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coffee_water_obj: {fileID: 262863833}
+  coffee_m_sound: {fileID: 1605239373}
+  is_microrange: 1
 --- !u!1 &1204248117
 GameObject:
   m_ObjectHideFlags: 0
@@ -38001,6 +38121,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: de07bf378e7247444a0715ad2ff509e3, type: 3}
       propertyPath: m_Name
       value: CFX3_Snow_Dense
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: de07bf378e7247444a0715ad2ff509e3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: de07bf378e7247444a0715ad2ff509e3, type: 3}
       propertyPath: m_RootOrder
@@ -48265,7 +48389,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7460b1f3370c2ea4b97cc2a4a48dd622, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4a86bf1f5cee6ce40ae8577bcb249476, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -52848,6 +52972,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 89a888a43b141d64580df2407d44b10e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 945509412282561851, guid: 89a888a43b141d64580df2407d44b10e,
         type: 3}
       propertyPath: m_CastShadows
@@ -56984,6 +57113,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.011973101, y: 0.03855121, z: 0.03855119}
   m_Center: {x: 0.11837414, y: -0.0050109294, z: 0.08704495}
+--- !u!114 &266478136924289220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266478136924289218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3b145ec32db4f4087df3eba984b978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coffee_water_obj: {fileID: 587742515}
+  coffee_m_sound: {fileID: 1605239373}
+  is_microrange: 0
 --- !u!1001 &334340182107543555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62903,10 +63047,20 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 409328329}
     m_Modifications:
+    - target: {fileID: 2726886960456584844, guid: 42272e47d0729ca42a869a7105e951f2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5389206286802032929, guid: 42272e47d0729ca42a869a7105e951f2,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.0064
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639137274132869584, guid: 42272e47d0729ca42a869a7105e951f2,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6002553308667808933, guid: 42272e47d0729ca42a869a7105e951f2,
         type: 3}
@@ -64548,7 +64702,7 @@ HingeJoint:
   m_Anchor: {x: 0.14, y: 0, z: -0.24}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.023358434, y: 1.118, z: -2.1309998}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -64622,7 +64776,31 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1202973251}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: CancelInvoke
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: deactivate_coffee
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1202973251}
+        m_TargetAssemblyTypeName: coffee_port, Assembly-CSharp
+        m_MethodName: deactivate_coffee
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
