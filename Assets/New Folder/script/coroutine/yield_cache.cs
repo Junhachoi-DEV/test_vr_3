@@ -1,10 +1,7 @@
-/*
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions.Comparers;
 
-static class yield_cache
+public static class yield_cache
 {
     // 박싱이 발생하지 않게 해주며 의도치 않게 가비지가 생성되는 것을 방지
     class FloatComparer : IEqualityComparer<float>
@@ -46,4 +43,3 @@ static class yield_cache
         return wfs_real;
     }
 }
-*/
