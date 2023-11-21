@@ -14,6 +14,7 @@ public class chair : MonoBehaviour
 
     int part_num;
     public int count_num;
+    public int timer;
 
     public bool is_touch;
     public bool is_drilled;
@@ -70,7 +71,7 @@ public class chair : MonoBehaviour
     {
         chair_attach_timer_obj.SetActive(true);
         is_counting = true;
-        for (int i = 5; i >= 0; i--)
+        for (int i = timer; i >= 0; i--)
         {
             audioSources[2].Play(); // timer sound
             chair_attach_timer_txt.text = i.ToString();
