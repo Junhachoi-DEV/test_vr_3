@@ -9,7 +9,7 @@ public class chair_part : MonoBehaviour
         if (other.CompareTag("chair_main") && !is_attach)
         {
             chair _chair = other.GetComponentInParent<chair>();
-            if (_chair.is_touch && _chair.count_num == part_num)
+            if (_chair.is_touch && _chair.count_num == part_num && !_chair.is_counting)
             {
                 gameObject.SetActive(false);
             }

@@ -32,7 +32,7 @@ public class chair : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("chair_part") && is_touch)
+        if (other.CompareTag("chair_part") && is_touch && !is_counting)
         {
             _chair_part = other.GetComponent<chair_part>();
             part_num = _chair_part.part_num;
