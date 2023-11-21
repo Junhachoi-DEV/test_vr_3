@@ -17611,7 +17611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.005
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 0.3
+  m_LineLength: 0.12
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -17910,7 +17910,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.15
+          m_FloatArgument: 0.12
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -24476,7 +24476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.005
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 0.3
+  m_LineLength: 0.12
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -24775,7 +24775,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0.15
+          m_FloatArgument: 0.12
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
