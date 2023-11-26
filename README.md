@@ -1,6 +1,6 @@
 # My Room
 ![KakaoTalk_20231115_170514317](https://github.com/Junhachoi-GameDav/My_Room/assets/87477736/ff6ee040-8b46-4958-9b8f-071894461287)
-
+시연 유튜브 영상 : https://www.youtube.com/watch?v=oZi8I_pv71k
 ## info
 팀 프로젝트  
 - 팀장 : 최준하(본인) = 프로그래밍 담당
